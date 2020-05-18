@@ -57,7 +57,8 @@ This method will be invoked when the Count button is clicked and the click liste
         view.findViewById(R.id.toast_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast myToast = Toast.makeText(getActivity(), "Hello toast!", Toast.LENGTH_SHORT);
+                String textToShow = "Little things make big days. Just do it!";
+                Toast myToast = Toast.makeText(getActivity(), textToShow, Toast.LENGTH_LONG);
                 myToast.show();
             }
         });
